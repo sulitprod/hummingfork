@@ -50,3 +50,5 @@ class BitwyreAuth(AuthBase):
         ).hexdigest()
 
         return api_sign
+
+# TODO: add WS auth
