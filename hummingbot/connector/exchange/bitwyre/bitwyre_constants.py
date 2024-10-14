@@ -24,5 +24,24 @@ PATH_OPEN_ORDERS = "orders/open/all"
 PATH_HISTORY_ORDERS = "orders/histories"
 PATH_MY_TRADES = "trades"
 
-# TODO: add limits && timeouts && intervals
+WS_PRIVATE_API = {
+    "ORDER_CONTROL": "/ws/private/orders/control",
+    "ORDER_STATUS": "/ws/private/orders/status",
+}
+WS_COMMANDS = {
+    "ORDER_CREATE": "create", 
+    "ORDER_CANCEL": "cancel", 
+    "ORDER_GET": "get"
+}
 
+TIMEOUT = 5
+SLEEP = 5
+
+MID_PRICE = 30000
+QTY = 0.5
+PRICE_PRECISION = 2
+QTY_PRECISION = 2
+MIN_SPREAD = 0
+MAX_SPREAD = 0.01
+
+# TODO: add limits && timeouts && intervals

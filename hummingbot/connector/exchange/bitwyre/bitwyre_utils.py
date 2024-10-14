@@ -7,7 +7,7 @@ from hummingbot.connector.exchange.bitwyre_draft import bitwyre_constants as CON
 from hummingbot.core.data_type.trade_fee import TradeFeeSchema
 
 CENTRALIZED = True
-EXAMPLE_PAIR = "BTC-USDT"
+EXAMPLE_INSTRUMENT_PAIR = "btc_usdt_spot"
 DEFAULT_FEES = TradeFeeSchema(
     maker_percent_fee_decimal=Decimal("0.002"),
     taker_percent_fee_decimal=Decimal("0.002"),

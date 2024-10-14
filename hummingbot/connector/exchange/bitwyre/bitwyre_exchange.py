@@ -25,11 +25,6 @@ if TYPE_CHECKING:
 
 
 class BitwyreExchange(ExchangePyBase):
-    DEFAULT_DOMAIN = ""
-
-    # Using 120 seconds here as Bitwyre websocket is quiet
-    TICK_INTERVAL_LIMIT = 120.0
-
     web_utils = web_utils
 
     def __init__(self,
@@ -38,7 +33,7 @@ class BitwyreExchange(ExchangePyBase):
                  bitwyre_secret_key: str,
                  trading_pairs: Optional[List[str]] = None,
                  trading_required: bool = True,
-                 domain: str = DEFAULT_DOMAIN):
+                 domain: str = CONSTANTS.DEFAULT_DOMAIN):
         """
         :param bitwyre_api_key: The API key to connect to private Bitwyre APIs.
         :param bitwyre_secret_key: The API secret.
